@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Home",
+    "pages": [
+      {
+        "Run": "No",
+        "Page": "PGA Home",
+        "Locale": "Home",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      }
+    ]
+  },
+
+  {
+    "name": "Play Courses Landing",
+    "pages": [
+      {
+        "Run": "No",
+        "Page": "Courses",
+        "Locale": "Play",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/courses",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": "No",
+        "Page": "Courses/State",
+        "Locale": "Play",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/courses/NV",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": "No",
+        "Page": "Courses/State/City",
+        "Locale": "Play",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/courses/NV/Carson%20City",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": "No",
+        "Page": "Courses/State/City/Facility",
+        "Locale": "Play",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/courses/facility?id=27611863",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      }
+    ]
+  },
+  {
+    "name": "Tournaments",
+    "pages": [
+      {
+        "Run": "No",
+        "Page": "safeway-open",
+        "Locale": "Events",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/events/safeway-open/",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": "Yes",
+        "Page": "safeway-open/leaderboard",
+        "Locale": "Events",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/events/safeway-open/leaderboard",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": "Yes",
+        "Page": "indy-women-in-tech-championship",
+        "Locale": "Events",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/events/indy-women-in-tech-championship/leaderboard",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": "No",
+        "Page": "Courses/State/City/Facility",
+        "Locale": "Play",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/courses/facility?id=27611863",
+        "GORO": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      }
+    ]
+  }
+]
