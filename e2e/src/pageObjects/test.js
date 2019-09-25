@@ -24,11 +24,10 @@ async function displayScorecards() {
 
     if (i >= playersScorecard.length - 5 && i < playersScorecard.length) {
       playersScorecard[i].click();
-      console.log(playersScorecard[i].innerText);
     }
   }
 
-  await sleep(2000);
+  await sleep(3000);
   console.log("Ended");
 }
 

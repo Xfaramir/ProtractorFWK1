@@ -13,33 +13,14 @@ export class HomePage {
     >;
   }
 
-  displayTopScorecards() {
-    return element
-      .all(
-        by.js(function() {
-          return document.querySelectorAll(
-            "article > div.MuiContainer-root.MuiBox-root.jss234.MuiContainer-maxWidthLg > div > div> div.jss236 > div.jss239.jss240"
-          );
-        })
-      )
-      .then(function(playersScorecard) {
-        for (let i = 0; i < playersScorecard.length; i++) {
-          if (i >= 0 && i < 5) {
-            playersScorecard[i].click();
-          }
-
-          if (
-            i >= playersScorecard.length / 2 &&
-            i < playersScorecard.length / 2 + 5
-          ) {
-            playersScorecard[i].click();
-          }
-
-          if (i >= playersScorecard.length - 5 && i < playersScorecard.length) {
-            playersScorecard[i].click();
-          }
-        }
-      });
+  imageHasdisplayed() {
+    return element(
+      by.js(function() {
+        return document.querySelector(
+          "div.MuiBox-root.jss363.jss350 > div > div > div:nth-child(2) > a > div > img"
+        );
+      })
+    );
   }
   getWebTitle() {
     return browser.getTitle() as Promise<string>;

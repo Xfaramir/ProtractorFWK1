@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1569447948214' stop='1569447972398'>
+    <name>PG Tournaments</name>
+    <title>PG Tournaments</title>
+    <test-cases>
+        <test-case start='1569447948215' status='passed' stop='1569447972397'>
+            <name>PGA-Tour Site Events / indy-women-in-tech-championship</name>
+            <title>PGA-Tour Site Events / indy-women-in-tech-championship</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='Jose Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1b3b14cb-6af1-49db-beaf-231464fd05c8-attachment.png' type='image/png' size='156296'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

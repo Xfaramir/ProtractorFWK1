@@ -1,37 +1,26 @@
 import { HomePage } from "../pageObjects/homePage.po";
 
-import {
-  browser,
-  logging,
-  element,
-  by,
-  By,
-  $,
-  $$,
-  ExpectedConditions,
-  protractor
-} from "protractor";
+import { browser, logging } from "protractor";
 
 const json = require("../pageObjects/testingUrls/testUrls.json");
 
 let web: HomePage;
 
 for (const site of json) {
-  if (site.pages) {
+  if (site.name === "Home") {
     describe(`PG ${site.name}`, function() {
       beforeEach(() => {
         web = new HomePage();
-        // Eyes need to be re open for each 'it' function in order to obtain difference between each run.
-        //  eyes.open(browser, eyeView.appName, eyeView.testName);
       });
       site.pages.forEach(page => {
         if (page.Run == "Yes") {
           it(`${page.Locale} / ${page.Page}`, function() {
-            console.log(page.URL);
             browser.manage().deleteAllCookies();
             web.navigateToWeb(page.URL);
-            web.displayTopScorecards();
-            browser.sleep(5000);
+
+            var elem = web.imageHasdisplayed();
+            expect(elem.isDisplayed()).toBeTruthy();
+            console.log(page.URL);
           });
 
           // it(`${page.Locale} / ${page.Page}`, function() {
@@ -46,6 +35,14 @@ for (const site of json) {
               .manage()
               .logs()
               .get(logging.Type.BROWSER);
+
+            /*
+            expect(logs).not.toContain(
+              jasmine.objectContaining({
+                level: logging.Level.SEVERE
+              } as logging.Entry)
+            ); 
+            */
           });
         }
       });

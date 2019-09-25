@@ -1,6 +1,8 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
-var screenShotUtils = require("protractor-screenshot-utils")
+
+const { SpecReporter } = require("jasmine-spec-reporter");
+const screenShotUtils = require("protractor-screenshot-utils")
   .ProtractorScreenShotUtils;
 
 exports.config = {
@@ -17,7 +19,7 @@ exports.config = {
   ],
   directConnect: false,
   seleniumAddress: "http://localhost:4444/wd/hub",
-  framework: "jasmine2",
+  framework: "jasmine",
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
@@ -33,6 +35,9 @@ exports.config = {
       setAsDefaultScreenshotMethod: true
     });
 
+    jasmine
+      .getEnv()
+      .addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
     // //Creating Allure report from jasmine results
 
     const AllureReporter = require("jasmine-allure-reporter");
