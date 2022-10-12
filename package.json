@@ -21,7 +21,7 @@
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
     "jasmine-allure-reporter": "^1.0.2",
-    "jasmine-reporters": "^2.3.2",
+    "jasmine-reporters": "^2.5.0",
     "protractor-jasmine2-html-reporter": "0.0.7",
     "protractor-jasmine2-parallel-html-reporter": "^1.0.0",
     "protractor-screenshot-utils": "^1.0.5",
